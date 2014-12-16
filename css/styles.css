@@ -5,7 +5,7 @@
   .jumbotron .container {
     width: 40em; }
   .jumbotron .well {
-    box-shadow: 5px 5px 5px #333; }
+    border: 8px solid #5cb85c; }
   .jumbotron .title {
     font-size: 4.4em;
     color: #5cb85c;
@@ -15,6 +15,9 @@
     color: #aaa;
     margin-top: 0;
     margin-left: 0.3em; }
+  .jumbotron hr {
+    color: #5cb85c;
+    border: 1px solid rgba(92, 184, 92, 0.4); }
   .jumbotron label {
     position: relative;
     top: 0.8em;
@@ -55,28 +58,37 @@
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis; }
 
-#results .row {
-  padding: 2em 0; }
-  #results .row .col-md-5 {
-    border: 1px solid brown;
-    padding: 1em; }
-    #results .row .col-md-5 h2 {
-      margin-top: 0.4em;
-      margin-bottom: 1em; }
-    #results .row .col-md-5 .info {
-      font-size: 1.2em; }
-    #results .row .col-md-5 .btn {
-      margin-top: 0.8em;
-      clear: both; }
 #results .results-header {
-  background-color: brown;
+  background-color: #732F29;
   color: #fff;
-  margin-top: 0; }
+  margin-top: 0;
+  border-bottom: 8px solid #8D4C47; }
   #results .results-header h2 {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 3em;
     margin: 0;
     padding: 0.6em 0; }
+#results .row {
+  padding: 2em 0; }
+  #results .row .col-md-5 {
+    padding: 1em; }
+    #results .row .col-md-5 h2 {
+      font-size: 3em;
+      margin-top: 0.4em;
+      margin-bottom: 0.6em;
+      color: #732F29; }
+    #results .row .col-md-5 img {
+      display: inline-block;
+      float: left; }
+    #results .row .col-md-5 .info {
+      font-size: 1.4em;
+      display: inline-block;
+      float: left;
+      margin-left: 1.2em;
+      text-align: left; }
+    #results .row .col-md-5 .btn {
+      margin-top: 1.4em;
+      clear: both; }
 
 /*# sourceMappingURL=styles.css.map */

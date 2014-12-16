@@ -1,18 +1,17 @@
 $dgreen: #5cb85c
 $lgreen: #127A4B
+$dbrown: #732F29
+$lbrown: #8D4C47
 
 
 .jumbotron
     height: 32em
     background-image: url(../images/jumbotron_background.jpg)
     margin-bottom: 0
-
     .container
         width: 40em
-
     .well
-        box-shadow: 5px 5px 5px #333
-
+        border: 8px solid $dgreen
     .title
         font-size: 4.4em
         color: $dgreen
@@ -22,7 +21,9 @@ $lgreen: #127A4B
         color: #aaa
         margin-top: 0
         margin-left: 0.3em
-
+    hr
+        color: $dgreen
+        border: 1px solid rgba(92, 184, 92, 0.4)
     label
         position: relative
         top: 0.8em
@@ -31,14 +32,11 @@ $lgreen: #127A4B
         margin-bottom: 0
         line-height: 1px
         color: #777
-
     .form-control
         font-size: 1.2em
         height: 2em
         margin-top: 0
     #state
-        // width: 4em
-
     .btn
         font-size: 1.2em
         margin-right: 0.6em
@@ -68,29 +66,36 @@ $lgreen: #127A4B
         text-overflow: ellipsis
 
 #results
-
-    .row
-        padding: 2em 0
-
-        .col-md-5
-            border: 1px solid brown
-            padding: 1em
-            h2
-                margin-top: 0.4em
-                margin-bottom: 1em
-            .info
-                font-size: 1.2em
-            .btn
-                margin-top: 0.8em
-                clear: both
-
     .results-header
-        background-color: brown
+        background-color: $dbrown
         color: #fff
         margin-top: 0
+        border-bottom: 8px solid $lbrown
         h2
             text-transform: uppercase
             letter-spacing: 3px
             font-size: 3em
             margin: 0
             padding: 0.6em 0
+    .row
+        padding: 2em 0
+        .col-md-5
+            padding: 1em
+            h2
+                font-size: 3em
+                margin-top: 0.4em
+                margin-bottom: 0.6em
+                color: $dbrown
+            img
+                display: inline-block
+                float: left
+            .info
+                font-size: 1.4em
+                display: inline-block
+                float: left
+                margin-left: 1.2em
+                text-align: left
+                b
+            .btn
+                margin-top: 1.4em
+                clear: both
