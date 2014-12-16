@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <title>FoOofinder</title>
 
+    <link rel="stylesheet" href="bower_components/bootstrap-sass/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+<div class="jumbotron">
+
+    <div class="container">
+
+        <div class="well">
+
+            <h1 class="page-title">FoOodFinder</h1>
+            <h3 class="seach-description">Enter your favorite food and the location to find the best food in the area</h2>
+
+            <form role="form" id="search">
+                <div class="form-group row">
+                    <div class="col-md-6">
+                        <label for="foodType">Food</label>
+                        <input type="text" class="form-control" id="foodType" placeholder="pizza...">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city" placeholder="chicago...">
+                        <label for="state">State</label>
+                        <input type="text" class="form-control" id="state" placeholder="il">
+                    </div>
+                    <br>
+                    <button class="btn btn-lg btn-primary">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
     
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap-sass/dist/js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
