@@ -1,26 +1,67 @@
+$dgreen: #5cb85c
+$lgreen: #127A4B
+
+
 .jumbotron
     height: 30em
-    background-color: rgba(255, 255, 255, 0.1)
     background-image: url(../images/jumbotron_background.jpg)
 
     .container
         width: 40em
 
     .well
-        opacity: 1
         box-shadow: 5px 5px 5px #333
-        // opacity: 1 !important
+
+    .title
+        font-size: 4.4em
+        color: $dgreen
+        text-shadow: 2px 2px 2px #aaa
+    .title-desc
+        font-size: 0.9em
+        color: #aaa
+        margin-top: 0
+        margin-left: 0.3em
 
     label
-        font-size: 0.8em
+        position: relative
+        top: 0.8em
+        margin-left: 0.2em
+        font-size: 0.6em
         margin-bottom: 0
         line-height: 1px
+        color: #777
 
     .form-control
         font-size: 1.2em
         height: 2em
         margin-top: 0
+    #state
+        // width: 4em
 
     .btn
         font-size: 1.2em
+        margin-right: 0.6em
+        margin-top: 1.4em
 
+.nav-sidebar 
+    width: 100%
+    padding: 8px 0 
+    border-right: 1px solid #ddd
+    a
+        color: #333
+        -webkit-transition: all 0.08s linear
+        -moz-transition: all 0.08s linear
+        -o-transition: all 0.08s linear
+        transition: all 0.08s linear
+    .active a
+        cursor: default
+        background-color: #34ca78 
+        color: #fff 
+        &:hover
+            background-color: #37D980
+    .text-overflow a,
+    .text-overflow .media-body
+        white-space: nowrap
+        overflow: hidden
+        -o-text-overflow: ellipsis
+        text-overflow: ellipsis 
