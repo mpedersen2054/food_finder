@@ -3,8 +3,9 @@ $lgreen: #127A4B
 
 
 .jumbotron
-    height: 30em
+    height: 32em
     background-image: url(../images/jumbotron_background.jpg)
+    margin-bottom: 0
 
     .container
         width: 40em
@@ -45,7 +46,7 @@ $lgreen: #127A4B
 
 .nav-sidebar 
     width: 100%
-    padding: 8px 0 
+    padding: 8px 0
     border-right: 1px solid #ddd
     a
         color: #333
@@ -55,8 +56,8 @@ $lgreen: #127A4B
         transition: all 0.08s linear
     .active a
         cursor: default
-        background-color: #34ca78 
-        color: #fff 
+        background-color: #34ca78
+        color: #fff
         &:hover
             background-color: #37D980
     .text-overflow a,
@@ -64,4 +65,32 @@ $lgreen: #127A4B
         white-space: nowrap
         overflow: hidden
         -o-text-overflow: ellipsis
-        text-overflow: ellipsis 
+        text-overflow: ellipsis
+
+#results
+
+    .row
+        padding: 2em 0
+
+        .col-md-5
+            border: 1px solid brown
+            padding: 1em
+            h2
+                margin-top: 0.4em
+                margin-bottom: 1em
+            .info
+                font-size: 1.2em
+            .btn
+                margin-top: 0.8em
+                clear: both
+
+    .results-header
+        background-color: brown
+        color: #fff
+        margin-top: 0
+        h2
+            text-transform: uppercase
+            letter-spacing: 3px
+            font-size: 3em
+            margin: 0
+            padding: 0.6em 0

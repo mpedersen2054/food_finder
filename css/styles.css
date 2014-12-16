@@ -1,6 +1,7 @@
 .jumbotron {
-  height: 30em;
-  background-image: url(../images/jumbotron_background.jpg); }
+  height: 32em;
+  background-image: url(../images/jumbotron_background.jpg);
+  margin-bottom: 0; }
   .jumbotron .container {
     width: 40em; }
   .jumbotron .well {
@@ -53,5 +54,29 @@
     overflow: hidden;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis; }
+
+#results .row {
+  padding: 2em 0; }
+  #results .row .col-md-5 {
+    border: 1px solid brown;
+    padding: 1em; }
+    #results .row .col-md-5 h2 {
+      margin-top: 0.4em;
+      margin-bottom: 1em; }
+    #results .row .col-md-5 .info {
+      font-size: 1.2em; }
+    #results .row .col-md-5 .btn {
+      margin-top: 0.8em;
+      clear: both; }
+#results .results-header {
+  background-color: brown;
+  color: #fff;
+  margin-top: 0; }
+  #results .results-header h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 3em;
+    margin: 0;
+    padding: 0.6em 0; }
 
 /*# sourceMappingURL=styles.css.map */
