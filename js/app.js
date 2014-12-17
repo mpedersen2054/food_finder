@@ -8,6 +8,13 @@
             this.foodInp = $('#food');
             this.cityInp = $('#city');
             this.stateInp = $('#state');
+            this.results = $('#results');
+            this.title = $('h2.title');
+            this.address = $('.address');
+            this.phone = $('.phone');
+            this.rating = $('.average-rating');
+            this.url = $('.business-url');
+            this.categories = $('.categories').find('.badge')
             this.stateInp.html(usStateData)
             this.binding();
         },
@@ -54,9 +61,17 @@
             }
         },
 
+        placesData: function(data) {
+            var resArr = data.query.results.Result,
+                arrLen;
+
+            if (!resArr) { false }
+            return resArr
+        },
+
         showPlaces: function(data) {
-            console.log('hello')
-            console.log(data)
+            var p = this.placesData(data)
+            console.log(p)
         }
 
     }
