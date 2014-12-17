@@ -58,36 +58,38 @@
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis; }
 
-#results .results-header {
+main .results-header {
   background-color: #732F29;
   color: #fff;
   margin-top: 0;
   border-bottom: 8px solid #8D4C47; }
-  #results .results-header h2 {
+  main .results-header h2 {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: 3em;
     margin: 0;
     padding: 0.6em 0; }
-#results .row {
+main .row {
   padding: 2em 0; }
-  #results .row .col-md-5 {
+  main .row .col-md-6 {
     padding: 1em; }
-    #results .row .col-md-5 h2 {
-      font-size: 3em;
+    main .row .col-md-6 h2 {
+      font-size: 2em;
       margin-top: 0.4em;
       margin-bottom: 0.6em;
-      color: #732F29; }
-    #results .row .col-md-5 img {
+      color: #732F29;
+      max-height: 30px;
+      overflow: hidden; }
+    main .row .col-md-6 img {
       display: inline-block;
       float: left; }
-    #results .row .col-md-5 .info {
+    main .row .col-md-6 .info {
       font-size: 1.4em;
       display: inline-block;
       float: left;
       margin-left: 1.2em;
       text-align: left; }
-    #results .row .col-md-5 .btn {
+    main .row .col-md-6 .btn {
       margin-top: 1.4em;
       clear: both; }
 

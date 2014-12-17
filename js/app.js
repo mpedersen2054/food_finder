@@ -9,13 +9,15 @@
             this.cityInp = $('#city');
             this.stateInp = $('#state');
             this.results = $('#results');
+            this.places = $('#places')
+            this.resultsParent = this.results.parent()
             this.title = $('h2.title');
             this.address = $('.address');
             this.phone = $('.phone');
             this.rating = $('.average-rating');
             this.url = $('.business-url');
             this.categories = $('.categories').find('.badge')
-            this.stateInp.html(usStateData)
+            this.stateInp.html(usStateData);
             this.binding();
         },
 
@@ -26,8 +28,8 @@
         formSubmit: function(e) {
             var food = this.foodInp.val(),
                 city = this.cityInp.val(),
-                state = this.stateInp.val()
-                info = [food, city, state]
+                state = this.stateInp.val(),
+                info = [food, city, state];
 
             if ( food && city && state ) {
                 this.getPlaces(info);
@@ -65,13 +67,26 @@
             var resArr = data.query.results.Result,
                 arrLen;
 
-            if (!resArr) { false }
-            return resArr
+            if (!resArr) { false; }
+            return resArr;
         },
 
         showPlaces: function(data) {
-            var p = this.placesData(data)
-            console.log(p)
+            var p = this.placesData(data),
+                arrLen = p.length,
+                resultsHtml = '';
+
+            for (var i=0; i<arrLen; i++) {
+                var title = p[i].Title,
+                    address = p[i].Address,
+                    rating = (p[i].Rating.LastReviewDate == null) ? 'No Rating' : p[i].Rating.AverageRating,
+                    phone = p[i].Phone,
+                    url = (p[i].BusinessUrl == null) ? 'No Website' : p[i].BusinessUrl;
+
+                var eachResult = appendResult(title,address,rating,phone,url)
+                resultsHtml+=eachResult
+            }
+            this.places.html('<div class="row">'+resultsHtml+'</div>');
         }
 
     }
