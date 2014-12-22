@@ -1,3 +1,6 @@
+.col-md-6 {
+  width: 48%; }
+
 .jumbotron {
   height: 32em;
   background-image: url(../images/jumbotron_background.jpg);
@@ -71,25 +74,29 @@ main .results-header {
     padding: 0.6em 0; }
 main .row {
   padding: 2em 0; }
-  main .row .col-md-6 {
-    padding: 1em; }
-    main .row .col-md-6 h2 {
-      font-size: 2em;
+  main .row .each-result {
+    margin: 0.6em;
+    padding: 0.6em;
+    border: 1px solid #aaa; }
+    main .row .each-result h2 {
+      font-size: 1.5em;
       margin-top: 0.4em;
       margin-bottom: 0.6em;
       color: #732F29;
       max-height: 30px;
       overflow: hidden; }
-    main .row .col-md-6 img {
+    main .row .each-result img {
       display: inline-block;
       float: left; }
-    main .row .col-md-6 .info {
-      font-size: 1.4em;
+    main .row .each-result .info {
+      font-size: 1.1em;
+      width: 50%;
       display: inline-block;
       float: left;
       margin-left: 1.2em;
-      text-align: left; }
-    main .row .col-md-6 .btn {
+      text-align: left;
+      overflow: none; }
+    main .row .each-result .btn {
       margin-top: 1.4em;
       clear: both; }
 

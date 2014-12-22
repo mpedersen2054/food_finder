@@ -59,7 +59,7 @@ function usStateData() {
 function appendResult(title,address,phone,rating,url) {
     var resHtml = '';
 
-    resHtml+='<div class="col-md-6">'
+    resHtml+='<div class="col-md-6 each-result">'
     resHtml+='<h2 class="title">'+title+'</h2>'
     resHtml+='<hr>'
     resHtml+='<img src="http://www.kaczmarek-photo.com/wp-content/uploads/2012/06/guinnes-150x150.jpg" alt="post img" class="img-responsive img-thumbnail">'
@@ -68,14 +68,6 @@ function appendResult(title,address,phone,rating,url) {
     resHtml+='<b>phone:</b><div class="phone">'+phone+'</div>'
     resHtml+='<b>rating:</b><div class="average-rating">'+rating+'</div>'
     resHtml+='<b>website:</b><div class="business-url">'+url+'</div>'
-    resHtml+='<b>categories:</b><div class="categories">'
-    resHtml+='<ul>'
-    resHtml+='<li class="badge">cool</li>'
-    resHtml+='<li class="badge">nice</li>'
-    resHtml+='<li class="badge">friendly</li>'
-    resHtml+='<li class="badge">ballin</li>'
-    resHtml+='</ul>'
-    resHtml+='</div>'
     resHtml+='</div>'
     resHtml+='<a class="btn btn-success pull-right clearfix" href="#">VISIT SITE</a>'
     resHtml+='</div>'

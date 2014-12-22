@@ -3,6 +3,10 @@ $lgreen: #127A4B
 $dbrown: #732F29
 $lbrown: #8D4C47
 
+// overrides
+.col-md-6
+    width: 48%
+
 
 .jumbotron
     height: 32em
@@ -79,10 +83,12 @@ main
             padding: 0.6em 0
     .row
         padding: 2em 0
-        .col-md-6
-            padding: 1em
+        .each-result
+            margin: 0.6em
+            padding: 0.6em
+            border: 1px solid #aaa
             h2
-                font-size: 2em
+                font-size: 1.5em
                 margin-top: 0.4em
                 margin-bottom: 0.6em
                 color: $dbrown
@@ -92,11 +98,13 @@ main
                 display: inline-block
                 float: left
             .info
-                font-size: 1.4em
+                font-size: 1.1em
+                width: 50%
                 display: inline-block
                 float: left
                 margin-left: 1.2em
                 text-align: left
+                overflow: none
                 b
             .btn
                 margin-top: 1.4em
