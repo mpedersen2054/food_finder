@@ -67,9 +67,9 @@ function appendResult(title,address,phone,rating,url) {
     resHtml+='<b>address:</b><div class="address">'+address+'</div>'
     resHtml+='<b>phone:</b><div class="phone">'+phone+'</div>'
     resHtml+='<b>rating:</b><div class="average-rating">'+rating+'</div>'
-    resHtml+='<b>website:</b><div class="business-url">'+url+'</div>'
+    resHtml+='<b>website:</b><div class="business-url"><a href='+url+'>'+url+'</div>'
     resHtml+='</div>'
-    resHtml+='<a class="btn btn-success pull-right clearfix" href="#">VISIT SITE</a>'
+    resHtml+='<a class="btn btn-success pull-right clearfix" href="'+url+'">VISIT SITE</a>'
     resHtml+='</div>'
     resHtml+=''
 

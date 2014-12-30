@@ -7,6 +7,11 @@ $lbrown: #8D4C47
 .col-md-6
     width: 48%
 
+html
+    position: relative
+    min-height: 100%
+body
+    margin: 0 0 60px
 
 .jumbotron
     height: 32em
@@ -40,7 +45,6 @@ $lbrown: #8D4C47
         font-size: 1.2em
         height: 2em
         margin-top: 0
-    #state
     .btn
         font-size: 1.2em
         margin-right: 0.6em
@@ -74,6 +78,8 @@ main
         background-color: $dbrown
         color: #fff
         margin-top: 0
+        margin-bottom: 1.2em
+        padding: 1em
         border-bottom: 8px solid $lbrown
         h2
             text-transform: uppercase
@@ -82,7 +88,6 @@ main
             margin: 0
             padding: 0.6em 0
     .row
-        padding: 2em 0
         .each-result
             margin: 0.6em
             padding: 0.6em
@@ -105,7 +110,21 @@ main
                 margin-left: 1.2em
                 text-align: left
                 overflow: none
-                b
             .btn
                 margin-top: 1.4em
                 clear: both
+
+footer
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 60px
+    background-color: #F5F5F5
+    color: $dbrown
+    font-weight: 300
+    letter-spacing: 2px
+    text-transform: uppercase
+    padding-top: 1.2em
+    span
+        float: right

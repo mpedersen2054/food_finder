@@ -16,7 +16,8 @@
             this.phone = $('.phone');
             this.rating = $('.average-rating');
             this.url = $('.business-url');
-            this.categories = $('.categories').find('.badge')
+            this.categories = $('.categories').find('.badge');
+            this.headerContainer = $('main .results-header .container');
             this.stateInp.html(usStateData);
             this.binding();
         },
@@ -32,11 +33,14 @@
                 info = [food, city, state];
 
             if ( food && city && state ) {
+                this.headerContainer.children().remove();
+                this.headerContainer.append('<h2>' + food + ' in ' + city + '</h2>');
                 this.getPlaces(info);
             } else {
                 // throw form error, validation
                 alert('not working')
             }
+
             e.preventDefault();
         },
 
@@ -63,9 +67,8 @@
             }
         },
 
-        placesData: function(data) {
-            var resArr = data.query.results.Result,
-                arrLen;
+        placesData: function(data) { // makes sure there is data
+            var resArr = data.query.results.Result;
 
             if (!resArr) { false; }
             return resArr;
@@ -88,8 +91,8 @@
             }
             this.places.html('<div class="row">'+resultsHtml+'</div>');
         }
-
     }
+
 
     ff.init();
 
